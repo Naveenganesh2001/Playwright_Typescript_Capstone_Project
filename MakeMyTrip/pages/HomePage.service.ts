@@ -23,6 +23,14 @@ export class HomePage {
   readonly cabsTab: Locator;
 
   readonly travelInsuranceTab: Locator;
+
+  readonly holidayPackagesTab: Locator;
+
+  readonly homestaysTab: Locator;
+
+  readonly visaTab: Locator;
+
+  readonly currencyTab: Locator;
   
 
   constructor(public readonly page: Page) {
@@ -47,6 +55,15 @@ export class HomePage {
     this.cabsTab = page.locator('//span[@class="chNavIcon appendBottom2 chSprite chCabs inactive"]');
 
     this.travelInsuranceTab = page.locator('//span[@class="chNavIcon appendBottom2 chSprite chTravelInsurance inactive"]');
+
+    this.holidayPackagesTab = page.locator('//span[@class="chNavIcon appendBottom2 chSprite chHolidays inactive"]');
+
+    this.homestaysTab = page.locator('//span[@class="chNavIcon appendBottom2 chSprite chHomestays inactive"]');
+
+    this.visaTab = page.locator('//span[@class="chNavIcon appendBottom2 chSprite chVisa inactive"]');
+
+    this.currencyTab = page.locator('//span[@class="chNavIcon appendBottom2 chSprite chForex inactive"]')
+
   };
 
   async isUserIsOnHomePage() {
@@ -131,5 +148,24 @@ export class HomePage {
     await this.travelInsuranceTab.click();
   };
 
+  async clickOnHolidaysPackagesTab(){
+    await this.holidayPackagesTab.click();
+
+  };
+
+  async clickOnHomestaysTab(){
+    await this.homestaysTab.click();
+
+  };
+
+  async clickOnVisaTab(){
+    await this.visaTab.click();
+
+  };
+
+  async clickOnCurrencyTab(){
+    await this.currencyTab.click();
+
+  }
 }   
 

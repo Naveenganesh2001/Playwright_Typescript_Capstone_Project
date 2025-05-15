@@ -1,7 +1,7 @@
 import { test } from '../fixtures/MyFixtures';
 
 
-test('Cabs Page Verification', async ({ page, homePage, cabsPage }) => {
+test('Test - 1: Cabs Page Verification', async ({ page, homePage, cabsPage }) => {
 
   await page.goto('/');
 
@@ -13,7 +13,7 @@ test('Cabs Page Verification', async ({ page, homePage, cabsPage }) => {
 
 });
 
-test('Cab Details Filling', async ({ page, homePage, cabsPage }) => {
+test('Test - 2: Cab Details Filling', async ({ page, homePage, cabsPage }) => {
 
     await page.goto('/');
   
@@ -29,7 +29,7 @@ test('Cab Details Filling', async ({ page, homePage, cabsPage }) => {
   
 });
 
-test('Print List Of Cabs', async ({ page, homePage, cabsPage }) => {
+test('Test - 3: Print List Of Cabs', async ({ page, homePage, cabsPage }) => {
 
     await page.goto('/');
   
@@ -47,7 +47,7 @@ test('Print List Of Cabs', async ({ page, homePage, cabsPage }) => {
   
 });
 
-test('Filtered The Cab Type', async ({ page, homePage, cabsPage }) => {
+test('Test - 4: Filtered The Cab Type', async ({ page, homePage, cabsPage }) => {
 
   await page.goto('/');
 
@@ -67,7 +67,7 @@ test('Filtered The Cab Type', async ({ page, homePage, cabsPage }) => {
 
 });
 
-test('Filtered The Cab Fuel Type', async ({ page, homePage, cabsPage }) => {
+test('Test - 5: Filtered The Cab Fuel Type', async ({ page, homePage, cabsPage }) => {
 
   await page.goto('/');
 
@@ -87,7 +87,7 @@ test('Filtered The Cab Fuel Type', async ({ page, homePage, cabsPage }) => {
 
 });
 
-test('Filtered The Cab Model', async ({ page, homePage, cabsPage }) => {
+test('Test - 6: Filtered The Cab Model', async ({ page, homePage, cabsPage }) => {
 
   await page.goto('/');
 
@@ -107,7 +107,7 @@ test('Filtered The Cab Model', async ({ page, homePage, cabsPage }) => {
 
 });
 
-test('Filtered The Cab Type and Fuel Type', async ({ page, homePage, cabsPage }) => {
+test('Test - 7: Filtered The Cab Type and Fuel Type', async ({ page, homePage, cabsPage }) => {
 
   await page.goto('/');
 
@@ -129,7 +129,7 @@ test('Filtered The Cab Type and Fuel Type', async ({ page, homePage, cabsPage })
 
 });
 
-test('Verify Payment with Roof Carrier', async ({ page, homePage, cabsPage }) => {
+test('Test - 8: Verify Payment with Roof Carrier', async ({ page, homePage, cabsPage }) => {
 
   await page.goto('/');
 
@@ -149,7 +149,7 @@ test('Verify Payment with Roof Carrier', async ({ page, homePage, cabsPage }) =>
 
 });
 
-test('Print the Cab Booking Details', async ({ page, homePage, cabsPage }) => {
+test('Test - 9: Print the Cab Booking Details', async ({ page, homePage, cabsPage }) => {
 
   await page.goto('/');
 
@@ -169,7 +169,7 @@ test('Print the Cab Booking Details', async ({ page, homePage, cabsPage }) => {
 
 });
 
-test('End To End Cab Booking', async ({ page, homePage, cabsPage }) => {
+test('Test - 10: End To End Cab Booking', async ({ page, homePage, cabsPage }) => {
 
   await page.goto('/');
 

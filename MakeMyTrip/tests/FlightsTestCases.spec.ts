@@ -1,6 +1,6 @@
-import { test, expect } from '../fixtures/MyFixtures';
+import { test } from '../fixtures/MyFixtures';
 
-test('Flight Details Filling', async ({ page, homePage, flightPage }) => {
+test('Test - 1: Flight Details Filling', async ({ page, homePage, flightPage }) => {
 
   await page.goto('/');
 
@@ -12,7 +12,7 @@ test('Flight Details Filling', async ({ page, homePage, flightPage }) => {
 
   await homePage.clickOnSearchButton();
 
- // await flightPage.isUserOnFlightsPage();
+  await flightPage.isUserOnFlightsPage();
 
 
 });

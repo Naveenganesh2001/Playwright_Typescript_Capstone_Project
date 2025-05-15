@@ -31,7 +31,7 @@ export default defineConfig({
      ignoreHTTPSErrors: true,
      launchOptions: {
        args: ['--ignore-certificate-errors'],
-       slowMo: 50,
+       //slowMo: 50,
      },
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */

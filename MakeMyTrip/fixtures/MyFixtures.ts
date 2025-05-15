@@ -5,6 +5,11 @@ import { TrainPage } from '../pages/TrainPage.service';
 import { CabsPage } from '../pages/CabsPage.service';
 import { FlightPage } from '../pages/FlightPage.service';
 import { TravelInsurancePage } from '../pages/TravelInsurancePage.service';
+import { HolidayPackagesPage } from '../pages/HolidayPackagesPage.service';
+import { HomestaysPage } from '../pages/HomestaysPage.service';
+import { VisaPage } from '../pages/VisaPage.service';
+import { CurrencyPage } from '../pages/CurrencyPage.service';
+
 
 import { test as base } from '@playwright/test';
 
@@ -17,6 +22,10 @@ type MyFixture = {
     cabsPage: CabsPage;
     flightPage: FlightPage;
     travelInsurancePage: TravelInsurancePage;
+    holidayPackagesPage: HolidayPackagesPage;
+    homestaysPage: HomestaysPage;
+    visaPage: VisaPage;
+    currencyPage: CurrencyPage;
 };
 
 export const test = base.extend<MyFixture>({
@@ -47,7 +56,24 @@ export const test = base.extend<MyFixture>({
     travelInsurancePage: async ({ page }, use) =>{
         const travelInsurancePage = new TravelInsurancePage(page);
         await use (travelInsurancePage);
-    }
+    },
+    holidayPackagesPage: async ({ page }, use) =>{
+        const holidayPackagesPage = new HolidayPackagesPage(page);
+        await use (holidayPackagesPage);
+    },
+    homestaysPage: async ({ page }, use) =>{
+        const homestaysPage = new HomestaysPage(page);
+        await use (homestaysPage);
+    },
+    visaPage: async ({ page }, use) =>{
+        const visaPage = new VisaPage(page);
+        await use (visaPage);
+    },
+    currencyPage: async ({ page }, use) =>{
+        const currencyPage = new CurrencyPage(page);
+        await use (currencyPage);
+    },
+
 });
 
 export { expect } from '@playwright/test';

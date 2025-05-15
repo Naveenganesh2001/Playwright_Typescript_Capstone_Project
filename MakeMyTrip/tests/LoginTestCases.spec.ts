@@ -1,6 +1,6 @@
-import { test, expect } from '../fixtures/MyFixtures';
+import { test  } from '../fixtures/MyFixtures';
 
-test('Login Functionalities', async ({ page, homePage, loginPage }) => {
+test('Test - 1: Login Functionalities', async ({ page, homePage, loginPage }) => {
 
   await page.goto('/');
 

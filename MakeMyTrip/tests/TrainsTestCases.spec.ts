@@ -1,6 +1,6 @@
 import { test } from '../fixtures/MyFixtures';
 
-test('Train Page Verification', async ({ page, homePage, trainPage }) => {
+test('Test - 1: Train Page Verification', async ({ page, homePage, trainPage }) => {
 
   await page.goto('/');
 
@@ -12,7 +12,7 @@ test('Train Page Verification', async ({ page, homePage, trainPage }) => {
 
 });
 
-test('Train Details Filling', async ({ page, homePage, trainPage }) => {
+test('Test - 2: Train Details Filling', async ({ page, homePage, trainPage }) => {
 
     await page.goto('/');
   
@@ -28,7 +28,7 @@ test('Train Details Filling', async ({ page, homePage, trainPage }) => {
   
 });
 
-test('Print List Of Trains', async ({ page, homePage, trainPage }) => {
+test('Test - 3: Print List Of Trains', async ({ page, homePage, trainPage }) => {
 
     await page.goto('/');
   
@@ -46,7 +46,7 @@ test('Print List Of Trains', async ({ page, homePage, trainPage }) => {
   
 });
 
-test('Trains Filtered As A/C', async ({ page, homePage, trainPage }) => {
+test('Test - 4: Trains Filtered As A/C', async ({ page, homePage, trainPage }) => {
 
     await page.goto('/');
   
@@ -66,7 +66,7 @@ test('Trains Filtered As A/C', async ({ page, homePage, trainPage }) => {
   
 });
 
-test('Print All Available Trains', async ({ page, homePage, trainPage }) => {
+test('Test - 5: Print All Available Trains', async ({ page, homePage, trainPage }) => {
 
     await page.goto('/');
   
@@ -86,7 +86,7 @@ test('Print All Available Trains', async ({ page, homePage, trainPage }) => {
   
 });
 
-test('Change the quota', async ({ page, homePage, trainPage }) => {
+test('Test - 6: Change the quota', async ({ page, homePage, trainPage }) => {
 
     await page.goto('/');
   
@@ -106,7 +106,7 @@ test('Change the quota', async ({ page, homePage, trainPage }) => {
   
 });
 
-test('Change the Departure timings', async ({ page, homePage, trainPage }) => {
+test('Test - 7: Change the Departure timings', async ({ page, homePage, trainPage }) => {
 
     await page.goto('/');
   
@@ -126,7 +126,7 @@ test('Change the Departure timings', async ({ page, homePage, trainPage }) => {
   
 });
 
-test('Print the trains which has 1st Class AC', async ({ page, homePage, trainPage }) => {
+test('Test - 8: Print the trains which has 1st Class AC', async ({ page, homePage, trainPage }) => {
 
     await page.goto('/');
   
@@ -146,7 +146,7 @@ test('Print the trains which has 1st Class AC', async ({ page, homePage, trainPa
   
 });
 
-test('Print the trains which has Free Cancellation Options', async ({ page, homePage, trainPage }) => {
+test('Test - 9: Print the trains which has Free Cancellation Options', async ({ page, homePage, trainPage }) => {
 
     await page.goto('/');
   
@@ -166,7 +166,7 @@ test('Print the trains which has Free Cancellation Options', async ({ page, home
   
 });
 
-test('End To End Train Ticket Booking', async ({ page, homePage, trainPage }) => {
+test('Test - 10: End To End Train Ticket Booking', async ({ page, homePage, trainPage }) => {
 
     await page.goto('/');
   

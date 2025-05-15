@@ -1,6 +1,6 @@
-import { test, expect } from '../fixtures/MyFixtures';
+import { test } from '../fixtures/MyFixtures';
 
-test('Travel Insurance Page Verification', async ({ page, homePage, travelInsurancePage }) => {
+test('Test - 1: Travel Insurance Page Verification', async ({ page, homePage, travelInsurancePage }) => {
 
   await page.goto('/');
 
@@ -12,7 +12,7 @@ test('Travel Insurance Page Verification', async ({ page, homePage, travelInsura
 
 });
 
-test('View Plans without selecting Destination', async ({ page, homePage, travelInsurancePage }) => {
+test('Test - 2: View Plans without selecting Destination', async ({ page, homePage, travelInsurancePage }) => {
 
     await page.goto('/');
   
@@ -30,7 +30,7 @@ test('View Plans without selecting Destination', async ({ page, homePage, travel
   
   });
 
-  test('View Plans without giving Number Of Travellers', async ({ page, homePage, travelInsurancePage }) => {
+  test('Test - 3: View Plans without giving Number Of Travellers', async ({ page, homePage, travelInsurancePage }) => {
 
     await page.goto('/');
   
@@ -48,7 +48,7 @@ test('View Plans without selecting Destination', async ({ page, homePage, travel
   
   });
 
-  test('Search and select the Destination', async ({ page, homePage, travelInsurancePage }) => {
+  test('Test - 4: Search and select the Destination', async ({ page, homePage, travelInsurancePage }) => {
 
     await page.goto('/');
   
@@ -67,7 +67,7 @@ test('View Plans without selecting Destination', async ({ page, homePage, travel
   
   });
 
-  test('Select Destination and Number of Travellers', async ({ page, homePage, travelInsurancePage }) => {
+  test('Test - 5: Select Destination and Number of Travellers', async ({ page, homePage, travelInsurancePage }) => {
 
     await page.goto('/');
   

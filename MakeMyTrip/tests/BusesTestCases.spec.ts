@@ -1,6 +1,6 @@
 import { test } from '../fixtures/MyFixtures';
 
-test('Bus Page Verification', async ({ page, homePage, busPage }) => {
+test('Test - 1: Bus Page Verification', async ({ page, homePage, busPage }) => {
 
   await page.goto('/');
 
@@ -12,7 +12,7 @@ test('Bus Page Verification', async ({ page, homePage, busPage }) => {
 
 });
 
-test('Bus Details Filling', async ({ page, homePage, busPage }) => {
+test('Test - 2: Bus Details Filling', async ({ page, homePage, busPage }) => {
 
     await page.goto('/');
   
@@ -28,7 +28,7 @@ test('Bus Details Filling', async ({ page, homePage, busPage }) => {
   
 });
 
-test('Print the List of Buses', async ({ page, homePage, busPage}) =>{
+test('Test - 3: Print the List of Buses', async ({ page, homePage, busPage}) =>{
 
     await page.goto('/');
 
@@ -46,7 +46,7 @@ test('Print the List of Buses', async ({ page, homePage, busPage}) =>{
 
 });
 
-test('Bus Filter A/c Sleeper', async ({ page, homePage, busPage}) =>{
+test('Test - 4: Bus Filter A/c Sleeper', async ({ page, homePage, busPage}) =>{
 
     await page.goto('/');
   
@@ -66,7 +66,7 @@ test('Bus Filter A/c Sleeper', async ({ page, homePage, busPage}) =>{
 
 });
 
-test('Select Bus Seats', async ({ page, homePage, busPage}) =>{
+test('Test - 5: Select Bus Seats', async ({ page, homePage, busPage}) =>{
 
     await page.goto('/');
   
@@ -84,7 +84,7 @@ test('Select Bus Seats', async ({ page, homePage, busPage}) =>{
 
 });
 
-test('End To End Bus Booking', async ({ page, homePage, busPage}) =>{
+test('Test - 6: Bus Filter With Bus Name', async ({ page, homePage, busPage}) =>{
 
     await page.goto('/');
   
@@ -98,17 +98,13 @@ test('End To End Bus Booking', async ({ page, homePage, busPage}) =>{
 
     await busPage.areBusesListed();
 
-    await busPage.userSelectsTheFirstSeat();
-
-    await busPage.clickContinueButton();
-
-    await page.waitForLoadState('load');
-
-    await busPage.captureScreenshotWithName('BusBooking');
+    await busPage.giveFilterBusName('A1 Travels');
 
 });
 
-test('Verify The Amount With Trip Assured Added', async ({ page, homePage, busPage}) =>{
+
+
+test('Test - 7: Verify The Amount With Trip Assured Added', async ({ page, homePage, busPage}) =>{
 
     await page.goto('/');
   
@@ -130,7 +126,7 @@ test('Verify The Amount With Trip Assured Added', async ({ page, homePage, busPa
 
 });
 
-test('Verify The Amount With Free Cancellation', async ({ page, homePage, busPage}) =>{
+test('Test - 8: Verify The Amount With Free Cancellation', async ({ page, homePage, busPage}) =>{
 
     await page.goto('/');
   
@@ -152,7 +148,7 @@ test('Verify The Amount With Free Cancellation', async ({ page, homePage, busPag
 
 });
 
-test('Bus Filter With Time', async ({ page, homePage, busPage}) =>{
+test('Test - 9: Bus Filter With Time', async ({ page, homePage, busPage}) =>{
 
     await page.goto('/');
   
@@ -170,7 +166,7 @@ test('Bus Filter With Time', async ({ page, homePage, busPage}) =>{
 
 });
 
-test('Bus Filter With Bus Name', async ({ page, homePage, busPage}) =>{
+test('Test - 10: End To End Bus Booking', async ({ page, homePage, busPage}) =>{
 
     await page.goto('/');
   
@@ -184,7 +180,13 @@ test('Bus Filter With Bus Name', async ({ page, homePage, busPage}) =>{
 
     await busPage.areBusesListed();
 
-    await busPage.giveFilterBusName('A1 Travels');
+    await busPage.userSelectsTheFirstSeat();
+
+    await busPage.clickContinueButton();
+
+    await page.waitForLoadState('load');
+
+    await busPage.captureScreenshotWithName('BusBooking');
 
 });
 
