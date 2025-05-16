@@ -76,7 +76,7 @@ test('Test - 2: Forex Order Page Verification', async ({ page, homePage, currenc
 
   test('Test - 5: Check Currency with given country', async ({ page, homePage, currencyPage }) => {
 
-    await page.goto('/');
+    await page.goto('https://www.makemytrip.com/');
   
     await homePage.isUserIsOnHomePage();
   
