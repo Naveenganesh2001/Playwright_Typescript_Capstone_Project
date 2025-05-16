@@ -30,7 +30,8 @@ export default defineConfig({
      headless: true,
      ignoreHTTPSErrors: true,
      launchOptions: {
-       args: ['--ignore-certificate-errors'],
+       args: ['--disable-http2',
+        '--ignore-certificate-errors'],
        //slowMo: 50,
      },
 
