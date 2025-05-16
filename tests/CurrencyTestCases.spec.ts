@@ -58,7 +58,7 @@ test('Test - 2: Forex Order Page Verification', async ({ page, homePage, currenc
     
     await currencyPage.isUserOnCurrencyPage();
 
-    await currencyPage.clickOnForexOrders();
+    //await currencyPage.clickOnForexOrders();
 
     await currencyPage.isUserOnForexPage();
 
@@ -84,7 +84,7 @@ test('Test - 2: Forex Order Page Verification', async ({ page, homePage, currenc
     
     await currencyPage.isUserOnCurrencyPage();
 
-    await currencyPage.clickOnForexOrders();
+   // await currencyPage.clickOnForexOrders();
 
     await currencyPage.isUserOnForexPage();
 

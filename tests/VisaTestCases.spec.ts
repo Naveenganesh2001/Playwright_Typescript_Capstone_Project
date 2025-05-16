@@ -48,9 +48,9 @@ test('Test - 2: Visa Details Filling', async ({ page, homePage, visaPage }) => {
 
   const optionList = [
     { question: "Visa Extension" },
-    //{ question: "Details of Minor" },
-    //{ question: "Travel Insurance" },
-    //{ question: "Do I need a Visa?" },
+    { question: "Details of Minor" },
+    { question: "Travel Insurance" },
+    { question: "Do I need a Visa?" },
   ];
     optionList.forEach(({ question  }) => {
     test(`Test - 4: print the ${question} Question and Answer`, async ({ page, homePage, visaPage }) => {
